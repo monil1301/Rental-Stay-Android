@@ -10,7 +10,8 @@ import androidx.compose.ui.graphics.Color
 private val DarkColorPalette = darkColors(
     primary = Purple200,
     primaryVariant = Purple700,
-    secondary = Teal200,
+    secondary = StromboliGreen,
+    onSecondary = Color.White,
     surface = EclipseGray,
     onSurface = Color.White
 )
@@ -18,13 +19,14 @@ private val DarkColorPalette = darkColors(
 private val LightColorPalette = lightColors(
     primary = Purple500,
     primaryVariant = Purple700,
-    secondary = Teal200,
-    surface = Color.White,
+    secondary = MediumAquamarineGreen,
+    onSecondary = Color.White,
+    surface = SnowWhite,
     onSurface = Color.Black
 )
 
 @Composable
-fun RentalStayTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable() () -> Unit) {
+fun RentalStayTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable () -> Unit) {
     val colors = if (darkTheme) {
         DarkColorPalette
     } else {

@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">Rental Stay</string>
+    <string name="title_activity_auth">AuthActivity</string>
+
+    <!-- Authorization -->
+    <string name="profile_icon">Profile icon</string>
+    <string name="name">Name</string>
+    <string name="message_icon">Message icon</string>
+    <string name="email_address">Email Address</string>
+    <string name="lock_icon">Lock icon</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="welcome_back">Welcome Back,</string>
+    <string name="get_on_board">Hey, Get On Board</string>
+    <string name="sign_up_to_continue">Sign Up to Continue</string>
+    <string name="sign_in_to_continue">Sign In to Continue</string>
 </resources>

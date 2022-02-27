@@ -7,9 +7,11 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Button
 import androidx.compose.material.ButtonDefaults
 import androidx.compose.material.ButtonElevation
+import androidx.compose.material.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
@@ -26,8 +28,9 @@ import com.shah.android.app.rentalstay.utilities.enums.ViewPosition
 fun RS_Button(
     modifier: Modifier,
     title: String,
-    textColor: Color = Color.White,
-    backgroundColor: Color = MediumAquamarine,
+    textColor: Color = MaterialTheme.colors.onSecondary,
+    backgroundColor: Color = MaterialTheme.colors.secondary,
+    shape: Shape = RoundedCornerShape(30.dp),
     textSize: TextUnit = 14.sp,
     fontFamily: FontFamily = Lato,
     fontWeight: FontWeight = FontWeight.Bold,
@@ -44,7 +47,7 @@ fun RS_Button(
 ) {
     Button(
         modifier = modifier,
-        shape = RoundedCornerShape(30.dp),
+        shape = shape,
         border = borderStroke,
         enabled = isEnabled,
         colors = ButtonDefaults.buttonColors(
