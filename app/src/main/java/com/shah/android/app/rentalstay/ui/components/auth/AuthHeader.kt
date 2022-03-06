@@ -34,7 +34,7 @@ fun AuthHeader(isSigningIn: Boolean, callBack: (Boolean) -> Unit) {
                     .size(Dimen30),
                 imageVector = Icons.Filled.Home,
                 contentDescription = "",
-                tint = MaterialTheme.colors.onSecondary
+                tint = MaterialTheme.colors.onPrimary
             )
 
             Row {
@@ -64,7 +64,7 @@ fun AuthHeader(isSigningIn: Boolean, callBack: (Boolean) -> Unit) {
             modifier = Modifier.padding(top = Dimen30),
             text = if (isSigningIn) stringResource(R.string.welcome_back) else stringResource(id = R.string.get_on_board),
             fontSize = TextSize30,
-            color = MaterialTheme.colors.onSecondary,
+            color = MaterialTheme.colors.onPrimary,
             fontWeight = FontWeight.Bold
         )
 
@@ -73,7 +73,7 @@ fun AuthHeader(isSigningIn: Boolean, callBack: (Boolean) -> Unit) {
                 .padding(vertical = Dimen10),
             text = if (isSigningIn) stringResource(R.string.sign_in_to_continue) else stringResource(R.string.sign_up_to_continue),
             fontSize = TextSize14,
-            color = MaterialTheme.colors.onSecondary
+            color = MaterialTheme.colors.onPrimary
         )
     }
 }

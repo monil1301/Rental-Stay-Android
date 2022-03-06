@@ -28,8 +28,8 @@ import com.shah.android.app.rentalstay.utilities.enums.ViewPosition
 fun RS_Button(
     modifier: Modifier,
     title: String,
-    textColor: Color = MaterialTheme.colors.onSecondary,
-    backgroundColor: Color = MaterialTheme.colors.secondary,
+    textColor: Color = MaterialTheme.colors.onPrimary,
+    backgroundColor: Color = MaterialTheme.colors.primary,
     shape: Shape = RoundedCornerShape(30.dp),
     textSize: TextUnit = 14.sp,
     fontFamily: FontFamily = Lato,

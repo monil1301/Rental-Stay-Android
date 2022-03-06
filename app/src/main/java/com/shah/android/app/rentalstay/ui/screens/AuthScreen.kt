@@ -32,10 +32,10 @@ fun AuthScreen(rentalStayApplication: RentalStayApplication?) {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(color = MaterialTheme.colors.secondary),
+            .background(color = MaterialTheme.colors.primary),
         verticalArrangement = Arrangement.spacedBy(Dimen20)
     ) {
-        var isSigningIn by remember { mutableStateOf(false) }
+        var isSigningIn by remember { mutableStateOf(true) }
         AuthHeader(isSigningIn) {
             isSigningIn = it
         }
