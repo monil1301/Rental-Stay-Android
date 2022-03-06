@@ -2,6 +2,7 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
 }
 
 android {
@@ -79,5 +80,11 @@ dependencies {
     def firebaseVersion = '29.1.0'
     implementation platform("com.google.firebase:firebase-bom:$firebaseVersion")
     implementation 'com.google.firebase:firebase-analytics-ktx' // analytics
+    implementation 'com.google.firebase:firebase-crashlytics-ktx' // crashlytics
     implementation 'com.google.firebase:firebase-auth-ktx' // authentication
+    implementation 'com.google.firebase:firebase-database-ktx' // database
+
+// Jetpack dataStore
+    def dataStoreVersion = '1.0.0'
+    implementation "androidx.datastore:datastore-preferences:$dataStoreVersion"
 }

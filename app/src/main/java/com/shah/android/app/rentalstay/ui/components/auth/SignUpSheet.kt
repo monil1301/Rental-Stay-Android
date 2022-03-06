@@ -1,6 +1,5 @@
 package com.shah.android.app.rentalstay.ui.components.auth
 
-import android.util.Log
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -16,7 +15,7 @@ import com.shah.android.app.rentalstay.ui.components.RS_TextFieldWithIcon
 import com.shah.android.app.rentalstay.ui.theme.*
 
 @Composable
-fun SignUpSheet() {
+fun SignUpSheet(onSignUp: (name: String, email: String, password: String, confirmationPassword: String) -> Unit) {
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -81,6 +80,7 @@ fun SignUpSheet() {
             textSize = TextSize20,
             shape = RoundedCornerShape(Dimen10)
         ) {
+            onSignUp(name, email, password, confirmPassword)
         }
     }
 }
@@ -89,6 +89,6 @@ fun SignUpSheet() {
 @Composable
 fun PreviewSignUpScreen() {
     RentalStayTheme(darkTheme = true) {
-        SignUpSheet()
+        SignUpSheet { _, _, _, _ -> }
     }
 }

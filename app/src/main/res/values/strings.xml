@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Rental Stay</string>
     <string name="title_activity_auth">AuthActivity</string>
+    <string name="title_activity_home">HomeActivity</string>
 
     <!-- Authorization -->
     <string name="profile_icon">Profile icon</string>
@@ -16,4 +17,6 @@
     <string name="get_on_board">Hey, Get On Board</string>
     <string name="sign_up_to_continue">Sign Up to Continue</string>
     <string name="sign_in_to_continue">Sign In to Continue</string>
+    <string name="sign_in_success">Signed In Successfully</string>
+    <string name="sign_up_success">Signed Up Successfully</string>
 </resources>
