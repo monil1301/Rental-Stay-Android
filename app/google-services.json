@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "532570672858",
+    "project_id": "rental-stay-13",
+    "storage_bucket": "rental-stay-13.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:532570672858:android:ea84b337c4edb4b12f9fe3",
+        "android_client_info": {
+          "package_name": "com.shah.android.app.rentalstay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "532570672858-gvmitppoo6f49fk0pgeckcsh7lft6ltj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAS7rNGdMrUEYf6g-R3FIg2oyVULDD4i-g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "532570672858-gvmitppoo6f49fk0pgeckcsh7lft6ltj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
