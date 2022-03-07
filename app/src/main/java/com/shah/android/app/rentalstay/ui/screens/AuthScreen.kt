@@ -55,7 +55,7 @@ fun AuthScreen(rentalStayApplication: RentalStayApplication?) {
                                 viewModel.saveUserDetailsToDevice(rentalStayApplication)
                             }
                             Toast.makeText(context, context.getString(R.string.sign_in_success), Toast.LENGTH_LONG).show()
-                            context.startActivity(Intent(context, HomeActivity::class.java))
+                            context.startActivity(Intent(context, HomeActivity::class.java).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK))
                         } else {
                             Toast.makeText(context, errorMessage, Toast.LENGTH_LONG).show()
                         }
@@ -68,7 +68,7 @@ fun AuthScreen(rentalStayApplication: RentalStayApplication?) {
                                 viewModel.saveUserDetailsToDevice(rentalStayApplication)
                             }
                             Toast.makeText(context, context.getString(R.string.sign_up_success), Toast.LENGTH_LONG).show()
-                            context.startActivity(Intent(context, HomeActivity::class.java))
+                            context.startActivity(Intent(context, HomeActivity::class.java).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK))
                         } else {
                             Toast.makeText(context, errorMessage, Toast.LENGTH_LONG).show()
                         }
