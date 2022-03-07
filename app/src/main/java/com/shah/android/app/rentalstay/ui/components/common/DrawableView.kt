@@ -1,4 +1,4 @@
-package com.shah.android.app.rentalstay.ui.components
+package com.shah.android.app.rentalstay.ui.components.common
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.padding

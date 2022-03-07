@@ -1,4 +1,4 @@
-package com.shah.android.app.rentalstay.ui.components
+package com.shah.android.app.rentalstay.ui.components.common
 
 import androidx.annotation.DrawableRes
 import androidx.compose.foundation.layout.Row

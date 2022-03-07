@@ -7,7 +7,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import com.shah.android.app.rentalstay.application.RentalStayApplication
-import com.shah.android.app.rentalstay.ui.components.RS_Text
+import com.shah.android.app.rentalstay.ui.components.common.RS_Text
 import com.shah.android.app.rentalstay.ui.theme.RentalStayTheme
 import com.shah.android.app.rentalstay.ui.theme.TextSize20
 import com.shah.android.app.rentalstay.utilities.helpers.UserHelper

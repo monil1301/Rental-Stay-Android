@@ -13,8 +13,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import com.shah.android.app.rentalstay.R
-import com.shah.android.app.rentalstay.ui.components.RS_Button
-import com.shah.android.app.rentalstay.ui.components.RS_Text
+import com.shah.android.app.rentalstay.ui.components.common.RS_Button
+import com.shah.android.app.rentalstay.ui.components.common.RS_Text
 import com.shah.android.app.rentalstay.ui.theme.*
 
 @Composable

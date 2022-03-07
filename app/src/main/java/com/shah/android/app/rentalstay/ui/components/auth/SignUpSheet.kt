@@ -10,8 +10,8 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
 import com.shah.android.app.rentalstay.R
-import com.shah.android.app.rentalstay.ui.components.RS_Button
-import com.shah.android.app.rentalstay.ui.components.RS_TextFieldWithIcon
+import com.shah.android.app.rentalstay.ui.components.common.RS_Button
+import com.shah.android.app.rentalstay.ui.components.common.RS_TextFieldWithIcon
 import com.shah.android.app.rentalstay.ui.theme.*
 
 @Composable
