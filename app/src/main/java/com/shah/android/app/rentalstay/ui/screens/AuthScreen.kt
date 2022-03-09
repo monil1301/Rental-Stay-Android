@@ -48,7 +48,13 @@ fun AuthScreen(rentalStayApplication: RentalStayApplication?) {
         ) {
             val context = LocalContext.current
             if (isSigningIn)
-                SignInSheet { email: String, password: String ->
+                SignInSheet(
+                   onForgotPassword =  { email ->
+                        viewModel.sendPasswordResetLink(email) { isSuccess, errorMessage ->
+                            Toast.makeText(context, if (isSuccess) "Sent password reset link to you email" else errorMessage, Toast.LENGTH_LONG).show()
+                        }
+                    }
+                ) { email: String, password: String ->
                     viewModel.signIn(email, password) { isSuccess, errorMessage ->
                         if (isSuccess) {
                             runBlocking {

@@ -47,6 +47,19 @@ class AuthViewModel : ViewModel() {
         }
     }
 
+    fun sendPasswordResetLink(
+        email: String,
+        onComplete: (isSuccess: Boolean, errorMessage: String?) -> Unit
+    ) {
+        if (isEmailValid(email)) {
+            auth.sendPasswordResetEmail(email).addOnCompleteListener {
+                onComplete(it.isSuccessful, it.exception?.message)
+            }
+        } else {
+            onComplete(false, "Invalid email")
+        }
+    }
+
     private fun updateUserProfile(name: String, onComplete: (Boolean, String?) -> Unit) {
         val user = Firebase.auth.currentUser
 

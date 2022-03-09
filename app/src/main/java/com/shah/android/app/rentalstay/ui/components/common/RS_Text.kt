@@ -43,7 +43,9 @@ fun RS_Text(
                 drawableSize,
                 drawableResource,
                 drawableDescription,
-                drawablePosition)
+                drawablePosition,
+                color
+            )
         }
         Text(
             text = text,
@@ -59,7 +61,9 @@ fun RS_Text(
                 drawableSize,
                 drawableResource,
                 drawableDescription,
-                drawablePosition)
+                drawablePosition,
+                color
+            )
         }
     }
 }

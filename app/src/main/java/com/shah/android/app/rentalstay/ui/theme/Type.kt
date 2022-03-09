@@ -9,3 +9,7 @@ val Lato = FontFamily(
     Font(R.font.lato_regular, FontWeight.Normal),
     Font(R.font.lato_bold, FontWeight.Bold),
 )
+
+val Jua = FontFamily(
+    Font(R.font.jua_regular, FontWeight.Normal)
+)

@@ -19,4 +19,7 @@
     <string name="sign_in_to_continue">Sign In to Continue</string>
     <string name="sign_in_success">Signed In Successfully</string>
     <string name="sign_up_success">Signed Up Successfully</string>
+
+    <!-- Home -->
+    <string name="rent_per_month">\u20B9 %1$s/mo*</string>
 </resources>

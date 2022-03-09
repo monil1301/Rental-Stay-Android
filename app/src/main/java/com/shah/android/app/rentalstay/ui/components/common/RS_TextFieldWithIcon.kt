@@ -68,7 +68,8 @@ fun RS_TextFieldWithIcon(
                 drawableSize = Dimen24,
                 drawableResource = icon,
                 drawableDescription = iconDescription,
-                drawablePosition = ViewPosition.START
+                drawablePosition = ViewPosition.START,
+                Color.DarkGray
             )
 
             OutlinedTextField(

@@ -3,8 +3,12 @@ package com.shah.android.app.rentalstay.ui.components.common
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.material.Icon
+import androidx.compose.material.LocalContentAlpha
+import androidx.compose.material.LocalContentColor
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.Dp
@@ -18,14 +22,15 @@ fun DrawableView(
     drawableResource: Int,
     drawableDescription: String?,
     drawablePosition: ViewPosition,
+    tint: Color
 ) {
-    Image(
+    Icon(
         modifier = Modifier
             .padding(end = if (drawablePosition == ViewPosition.START) drawablePadding else Dimen0)
             .padding(start = if (drawablePosition == ViewPosition.END) drawablePadding else Dimen0)
             .size(drawableSize),
         painter = painterResource(id = drawableResource),
         contentDescription = drawableDescription,
-        contentScale = ContentScale.FillBounds
+        tint = tint
     )
 }

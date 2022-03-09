@@ -65,7 +65,8 @@ fun RS_Button(
                 drawableSize,
                 drawableResource,
                 drawableDescription,
-                drawablePosition
+                drawablePosition,
+                textColor
             )
         }
 
@@ -83,7 +84,8 @@ fun RS_Button(
                 drawableSize,
                 drawableResource,
                 drawableDescription,
-                drawablePosition
+                drawablePosition,
+                textColor
             )
         }
     }

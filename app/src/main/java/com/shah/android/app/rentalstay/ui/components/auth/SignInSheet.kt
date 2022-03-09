@@ -6,6 +6,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
@@ -15,7 +16,7 @@ import com.shah.android.app.rentalstay.ui.components.common.RS_TextFieldWithIcon
 import com.shah.android.app.rentalstay.ui.theme.*
 
 @Composable
-fun SignInSheet(onSignIn: (email: String, password: String) -> Unit) {
+fun SignInSheet(onForgotPassword: (email: String) -> Unit, onSignIn: (email: String, password: String) -> Unit) {
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -48,6 +49,16 @@ fun SignInSheet(onSignIn: (email: String, password: String) -> Unit) {
         )
 
         RS_Button(
+            modifier = Modifier,
+            title = "Forgot Password?",
+            backgroundColor = Color.Transparent,
+            textColor = MaterialTheme.colors.onBackground,
+            elevation = null
+        ) {
+            onForgotPassword(email)
+        }
+
+        RS_Button(
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(top = Dimen58)
@@ -65,6 +76,6 @@ fun SignInSheet(onSignIn: (email: String, password: String) -> Unit) {
 @Composable
 fun PreviewSignInScreen() {
     RentalStayTheme(darkTheme = true) {
-        SignInSheet{ _, _ -> }
+        SignInSheet({}){ _, _ -> }
     }
 }
