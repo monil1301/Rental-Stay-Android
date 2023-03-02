@@ -1,6 +1,8 @@
 package com.shah.android.app.rentalstay.view_models
 
 import androidx.lifecycle.ViewModel
+import com.google.firebase.auth.FirebaseUser
+import com.google.firebase.auth.FirebaseUserMetadata
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.auth.ktx.userProfileChangeRequest
 import com.google.firebase.ktx.Firebase

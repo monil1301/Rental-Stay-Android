@@ -22,4 +22,20 @@
 
     <!-- Home -->
     <string name="rent_per_month">\u20B9 %1$s/mo*</string>
+    <string name="bulleted_string">\u2022 \t %1$s</string>
+
+    <!-- Feature cards -->
+    <string name="feature_screen_title">Not just four walls and a roof</string>
+    <string name="feature_screen_desc">Come over and experience how a place to stay can be so much more</string>
+    <string name="best_life_title">Start living your best life from day one</string>
+    <string name="best_life_desc">Bring a box full of hopes, dreams ambitions…. and of course, your personal belongings. Everything else furniture, appliances, food - has already been taken care of.</string>
+    <string name="room_title">Step into a room that has room for everything</string>
+    <string name="room_desc">Your clothes and bag will not be fighting for space on the same chair. At Rental Stay, there\'s ample room for all your possessions. Even a framed photo of your family, for the rare occasions you miss home.</string>
+    <string name="cleaning_title">Take your daily list of chores. And tear it up</string>
+    <string name="cleaning_desc">You have better things to do than wash your clothes, clean up your room and cook your meals. So our team of pros will do them all for you.</string>
+    <string name="common_area_title">Chill in a common area that\'s anything but common</string>
+    <string name="common_area_desc">Nope, we don\'t try to pass off a few plastic chairs and a TV as a common area. We\'ve replaced them with sofas, bean bags and large-screen TVs. And we\'ve also added gaming zones, fitness centres and chillout corners as a bonus.</string>
+    <string name="meal_title">Don\'t come expecting "hostel-PG food"</string>
+    <string name="meal_desc">Instead, bring along a big appetite for healthy, yummy meals. With flavours that have a local touch. And that, at the same time, take your taste buds on a journey back home.</string>
+
 </resources>

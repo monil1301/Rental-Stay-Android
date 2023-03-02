@@ -8,13 +8,15 @@ import androidx.compose.material.icons.filled.Female
 import androidx.compose.material.icons.filled.Male
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.shah.android.app.rentalstay.ui.components.common.RS_Text
 import com.shah.android.app.rentalstay.ui.theme.Dimen4
 
 @Composable
-fun ForMaleOrFemale(forMale: Boolean) {
+fun ForMaleOrFemale(modifier: Modifier = Modifier, forMale: Boolean) {
     Row(
+        modifier = modifier,
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.spacedBy(Dimen4)
     ) {

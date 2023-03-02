@@ -1,5 +1,6 @@
 package com.shah.android.app.rentalstay.view_models
 
+import android.util.Log
 import androidx.compose.runtime.snapshots.SnapshotStateList
 import androidx.lifecycle.ViewModel
 import com.google.firebase.database.ktx.database
@@ -47,6 +48,8 @@ class HomeViewModel: ViewModel() {
                         )
                     )
                 }
+            } else {
+                Log.d("RS_log", it.exception.toString())
             }
         }
     }

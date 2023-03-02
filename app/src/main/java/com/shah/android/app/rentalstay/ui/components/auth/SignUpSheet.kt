@@ -1,7 +1,10 @@
 package com.shah.android.app.rentalstay.ui.components.auth
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.gestures.Orientation
+import androidx.compose.foundation.gestures.scrollable
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.MaterialTheme
 import androidx.compose.runtime.Composable
@@ -20,7 +23,8 @@ fun SignUpSheet(onSignUp: (name: String, email: String, password: String, confir
         modifier = Modifier
             .fillMaxSize()
             .background(color = MaterialTheme.colors.background)
-            .padding(horizontal = Dimen30, vertical = Dimen30),
+            .padding(horizontal = Dimen30, vertical = Dimen30)
+            .scrollable(rememberScrollState(), Orientation.Vertical),
     ) {
         var name = ""
         var email = ""

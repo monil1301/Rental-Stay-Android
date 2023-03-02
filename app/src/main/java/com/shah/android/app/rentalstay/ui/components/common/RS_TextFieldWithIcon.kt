@@ -43,14 +43,14 @@ fun RS_TextFieldWithIcon(
     iconDescription: String,
     label: String,
     elevation: Dp = Dimen10,
-    singleLine: Boolean = false,
+    singleLine: Boolean = true,
     maxCharacterLength: Int? = null,
     keyboardType: KeyboardType = KeyboardType.Text,
     text: String = "",
     onValueChanged: (String) -> Unit,
 ) {
     var textValue by remember { mutableStateOf(text) }
-    var passwordVisibility by remember { mutableStateOf(keyboardType != KeyboardType.Password ) }
+    var passwordVisibility by remember { mutableStateOf(keyboardType != KeyboardType.Password) }
 
     Surface(
         modifier = modifier,
@@ -116,7 +116,7 @@ fun RS_TextFieldWithIcon(
                             Icon(imageVector = image, iconDescription)
                         }
                     }
-                } else null
+                } else null,
             )
         }
     }

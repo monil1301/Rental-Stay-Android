@@ -24,7 +24,7 @@ class RoutesActivity : AppCompatActivity() {
                     Constants.DataStore.Keys.uId) == null) {
                 Intent(this@RoutesActivity, AuthActivity::class.java)
             } else {
-                Intent(this@RoutesActivity, HomeActivity::class.java)
+                Intent(this@RoutesActivity, FeaturesActivity::class.java)
             }
         }
     }

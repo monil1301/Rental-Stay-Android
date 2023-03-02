@@ -33,6 +33,7 @@ fun RentalStayTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Compos
 
     MaterialTheme(
         colors = colors,
-        content = content
+        content = content,
+        typography = Typography
     )
 }

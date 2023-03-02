@@ -21,7 +21,9 @@ import android.content.Intent
 import android.net.Uri
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.compose.foundation.clickable
 import androidx.compose.ui.platform.LocalContext
+import com.shah.android.app.rentalstay.activities.PgDetailsActivity
 
 @Composable
 fun PropertyCard(modifier: Modifier = Modifier, propertyDetails: PropertyDetails) {
@@ -38,7 +40,12 @@ fun PropertyCard(modifier: Modifier = Modifier, propertyDetails: PropertyDetails
 
     Surface(
         modifier = modifier
-            .padding(vertical = Dimen12, horizontal = Dimen12),
+            .padding(vertical = Dimen12, horizontal = Dimen12)
+            .clickable {
+                       context.startActivity(Intent(context, PgDetailsActivity::class.java)
+                           .putExtra("propertyDetails", propertyDetails)
+                       )
+            },
         shape = RoundedCornerShape(Dimen8),
         elevation = Dimen14
     ) {

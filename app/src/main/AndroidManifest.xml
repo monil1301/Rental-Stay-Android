@@ -43,6 +43,20 @@
             android:label="@string/title_activity_home"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
+
+        <activity
+            android:name=".activities.PgDetailsActivity"
+            android:exported="true"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
+        <activity
+            android:name=".activities.FeaturesActivity"
+            android:exported="true"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
     </application>
 
 </manifest>
